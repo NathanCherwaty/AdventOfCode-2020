@@ -44,7 +44,7 @@ namespace AdventOfCode2020
             }
         }
 
-        private  bool FindAccValueBeforeLoop(string[] instructions, ref int currentAcc)
+        private bool FindAccValueBeforeLoop(string[] instructions, ref int currentAcc)
         {
             int nextOp = 0;
             int acc = 0;
@@ -85,7 +85,6 @@ namespace AdventOfCode2020
                     currentAcc = acc;
                     return true;
                 }
-               
             }
             return false;
         }
